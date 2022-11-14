@@ -6,17 +6,17 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: () => import('../views/Home.vue')
+    component: () => import('@/views/Home.vue'),
   },
   {
     path: '/about',
-    component: () => import('../views/About.vue')
-  }
+    component: () => import('@/views/About.vue'),
+  },
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  routes
+  routes,
 })
 
 export default router
